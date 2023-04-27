@@ -50,6 +50,7 @@ header{
   padding: 15px;
   img{
     height: 80px;
+    min-height: 80px;
   }
     
 }
@@ -75,9 +76,8 @@ ul{
   width: 25%;
 }
 
-
 .nav-list{
-  width: 55%;
+  // width: 55%;
   // width: 50%;
 }
 

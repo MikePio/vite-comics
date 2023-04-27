@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <body class="d-flex col align-items-center">
+  <body class="d-flex col justify-content-center align-items-center">
     <div class="container-content col justify-content-center align-items-center">
       <div class="container row align-items-center">
         <h1><span>--</span>> Content goes here <span>&lt--</span></h1>
@@ -26,7 +26,7 @@ export default {
               <img src="../assets/img/buy-comics-digital-comics.png" alt="img">
             </div>
             <div class="col justify-content align-items-center">
-              <div>digital comics</div>
+              <div class="name-item">digital comics</div>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ export default {
               <img src="src\assets\img\buy-comics-merchandise.png" alt="img">
             </div>
             <div class="col">
-              <div>dc merchandise</div>
+              <div class="name-item">dc merchandise</div>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default {
               <img src="src\assets\img\buy-comics-subscriptions.png" alt="img">
             </div>
             <div class="col justify-content align-items-center">
-              <div>subscription</div>
+              <div class="name-item">subscription</div>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default {
               <img class="position-img" src="src\assets\img\buy-comics-shop-locator.png" alt="img">
             </div>
             <div class="col justify-content align-items-center">
-              <div>comic shop locator</div>
+              <div class="name-item">comic shop locator</div>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default {
               <img class="visa-img" src="../assets/img/buy-dc-power-visa.svg" alt="img-visa">
             </div>
             <div class="col justify-content align-items-center">
-              <div>dc power visa</div>
+              <div class="name-item">dc power visa</div>
             </div>
           </div>
         </div>
@@ -113,7 +113,10 @@ export default {
       width: auto;
       height: 40px;
     }
-      
+
+    .name-item{
+      font-size: 14px;
+    }
   }
 
 
