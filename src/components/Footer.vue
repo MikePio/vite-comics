@@ -12,9 +12,68 @@ export default {
 
 <template>
   <footer>
-    <div class="container-top">
-      
+
+    <div class="container-top col align-items-center justify-content-center">
+      <div class="container row ">
+        <div class="half-container half-container-left">
+          <div class="row">
+            <div class="col">
+              
+              <ul>
+                <h4>DC COMICS</h4>
+                <li>Characters</li>
+                <li>Comics</li>
+                <li>Movies</li>
+                <li>TV</li>
+                <li>Games</li>
+                <li>Videos</li>
+                <li>News</li>
+              </ul>
+  
+              <ul>
+                <h4>SHOP</h4>
+                <li>Shop DC</li>
+                <li>Shop DC Collectibles</li>
+              </ul>
+            </div>
+    
+            <div class="col">
+              <ul>
+                <h4>DC</h4>
+                <li>Terms Of Use</li>
+                <li>Privacy policy (New)</li>
+                <li>Ad Choices</li>
+                <li>Advertising</li>
+                <li>Jobs</li>
+                <li>Subscriptions</li>
+                <li>Talent Workshops</li>
+                <li>CPSC Certificates</li>
+                <li>Ratings</li>
+                <li>Shop Help</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+    
+            <div class="col">
+              <ul>
+                <h4>SITES</h4>
+                <li>DC</li>
+                <li>MAD Magazine</li>
+                <li>DC Kids</li>
+                <li>DC Universe</li>
+                <li>DC Power Visa</li>
+              </ul>
+            </div>
+              
+          </div>
+            
+      </div>
+        <div class="half-container half-container-right">
+
+        </div>
+      </div>
     </div>
+
     <div class="container-bottom col align-items-center justify-content-center">
       <div class="container row justify-content-between">
         <button>SIGN-UP NOW!</button>
@@ -42,6 +101,34 @@ footer{
   .container-top{
     height: 370px;
     background-image: url('../assets/img/footer-bg.jpg');
+    .half-container{
+      // border: 2px solid $primary-color;
+      width: 50%;
+    }
+    .half-container-right{
+      height: 100%;
+      width: 50%;
+      background-image: url('../assets/img/dc-logo-bg.png ');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .col{
+      padding: 0 10px;
+    }
+    ul{
+
+      & *{
+        color: $tertiary-color;
+      }
+      h4{
+        padding: 10px 0;
+      }
+      li{
+        color: $quaternary-color;
+        font-size: 12px;
+        padding: 5px 0;
+      }
+    }
   }
 
   .container-bottom{
