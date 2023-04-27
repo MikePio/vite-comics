@@ -1,4 +1,5 @@
 // Nel main.scss si inseriscono tutti gli import
+// in questo modo basta importare main css nello style di ogni file.vue es. @use '../scss/main.scss' as *;
 @import './partials/general';
 @import './partials/var';
 

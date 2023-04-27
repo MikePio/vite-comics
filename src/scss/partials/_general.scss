@@ -12,11 +12,71 @@ body{
   background-color: rgb(35, 35, 35);
 }
 
+.d-flex, .row{
+  display: flex;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-content-start{
+  justify-content: flex-start;
+  // justify-content: start;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.justify-content-end{
+  justify-content: flex-end;
+  // justify-content: end;
+}
+
+.justify-content-between{
+  justify-content: space-between;
+}
+
+.justify-content-around{
+  justify-content: space-around;
+}
+
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
+
+.align-items-start{
+  align-items: start;
+}
+
+.align-items-end{
+  align-items: end;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.container{
+  width: 85vw;
+  max-width: 85%;
+  // margin: 0 auto;
+}
+
+img{
+  max-width: 100%;
+}
+
 h1{
   color: $primary-color;
 }
 
-
+// reset liste
+ul{
+  list-style-type: none;
+}
 
 
 

@@ -13,10 +13,13 @@ export default {
 </script>
 
 <template>
-  <h1>Hello world</h1>
+
   <Header/>
+
   <Main/>
+
   <Footer/>
+  
 </template>
 
 <style lang="scss">
