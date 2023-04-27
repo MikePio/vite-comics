@@ -61,11 +61,17 @@ ul{
     font-size: small;
     color: $quinary-color;
     font-weight: 600;
+    border-bottom: 6px solid transparent;
+    &:hover{
+      cursor: pointer;
+      border-bottom: 6px solid $primary-color;
+    }
   }
+
 }
+
 .container-header{
   width: 85%;
-  // display: flex;
 }
 
 .nav-row{
@@ -77,8 +83,7 @@ ul{
 }
 
 .nav-list{
-  // width: 55%;
-  // width: 50%;
+
 }
 
 
