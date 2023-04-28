@@ -16,9 +16,13 @@ body{
   display: flex;
 }
 
-.col{
+.flex-column, .col{
   display: flex;
   flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .justify-content-start{
@@ -63,6 +67,10 @@ body{
   width: 85%;
   max-width: 1200px;
   // margin: 0 auto;
+}
+
+.container-100{
+  width: 100%;
 }
 
 img{

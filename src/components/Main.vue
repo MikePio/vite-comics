@@ -12,9 +12,90 @@ export default {
 <template>
   <body class="d-flex col justify-content-center align-items-center">
     <div class="container-content col justify-content-center align-items-center">
-      <div class="container row align-items-center">
-        <h1><span>--</span>> Content goes here <span>&lt--</span></h1>
 
+      <div class="container-100 col justify-content-center align-items-center">
+        <div class="main-container-image container-100">
+          <div class="current-series">CURRENT SERIES</div>
+        </div>
+
+        <div class="cards-container container row flex-wrap">
+
+          <!-- * cards -->
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+          <div class="card col">
+            <img src="../assets/img/jumbotron.jpg" alt="img-card">
+            <div>ACTION COMICS</div>
+          </div>
+
+        <div class="container-100 col justify-content-center align-items-center">
+          <button class="load-more-btn">LOAD MORE</button>
+        </div>
+          
+        </div>
       </div>
     </div>
     
@@ -87,8 +168,64 @@ export default {
   body{
     .container-content{
       width: 100%;
-      height: 110px;
+      // height: 110px;
       background-color: $senary-color;
+
+      .main-container-image{
+        height: 400px;
+        background-image: url('../assets/img/jumbotron.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        position: relative;
+        .current-series{
+          position: absolute;
+          // bottom: -50px;
+          // left: 180px;
+          bottom: -25px;
+          left: 10%;
+          background-color: $primary-color;
+          color: $tertiary-color;
+          font-weight: 600;
+          font-size: 27px;
+          padding: 10px 25px;
+        }
+      }
+      .cards-container{
+        margin: 30px;
+
+        .card{
+          height: 230px;
+          width: 180px;
+          color: $tertiary-color;
+          margin: 30px 10px;
+          &:hover{
+            color: $primary-color;
+            cursor: pointer;
+          }
+          img{
+            height: 180px;
+            width: 180px;
+            margin-bottom: 15px;
+          }
+        }
+        .load-more-btn{
+          margin: 0 auto;
+          background-color: $primary-color;
+          cursor: pointer;
+          overflow: hidden;
+          outline: none;
+          color: $tertiary-color;
+          border: 3px $primary-color solid;
+          font-size: 16px;
+          padding: 5px 25px;
+          font-weight: 600;
+          &:hover{
+            background-color: $tertiary-color;
+            // color: $senary-color;
+            color: $primary-color;
+          }
+        }
+      }
     }
     .container-cta{
       width: 100%;

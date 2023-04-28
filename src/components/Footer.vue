@@ -101,35 +101,26 @@ export default {
 
 footer{
   .container-top{
-    height: 370px;
     background-image: url('../assets/img/footer-bg.jpg');
-    // padding: 0;
-    // margin: 0;
+    background-position: center;
     .big-container{
       height: 100%;
     }
     .half-container{
-      // border: 2px solid $primary-color;
-      // width: 50%;
+
     }
     .half-container-left{
       padding: 30px 0;
       width: 40%;
     }
       .half-container-right{
-      // height: 100%;
-      // height: 30%;
       width: 60%;
-      // background-image: url('../assets/img/dc-logo-bg.png ');
       background-image: url('../assets/img/dc-logo-bg.png');
       background-position: center;
       background-repeat: no-repeat;
-      // position: absolute;
       position: relative;
       .dc-background{
-        // background-image: url('../assets/img/dc-logo-bg.png');
-        // position: absolute;
-        // position: relative;
+
       }
     }
     .col{
@@ -179,6 +170,10 @@ footer{
       font-size: 16px;
       padding: 10px;
       cursor: pointer;
+      &:hover{
+        background-color: $tertiary-color;
+        color: $primary-color;
+      }
     }
     ul{
       li{
