@@ -11,11 +11,11 @@ export default {
 
 <template>
   <header class="d-flex col align-items-center justify-content-center">
-    <div class="container-header container  d-flex justify-content-between align-items-center">
+    <div class="container-header container d-flex justify-content-between align-items-center">
       <div class="nav-row row justify-content-between align-items-center ">
         
         <div class="row-logo row align-items-center">
-            <img src="../assets/img/dc-logo.png" alt="">
+            <img class="logo" src="../assets/img/dc-logo.png" alt="">
           </div>
 
           <div class="row justify-content-end">
@@ -52,11 +52,20 @@ header{
     height: 80px;
     min-height: 80px;
   }
+  .logo{
+    cursor: pointer;
+  }
     
 }
 
 ul{
+  
   li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
     margin: 0 10px;
     font-size: small;
     color: $quinary-color;
@@ -64,6 +73,7 @@ ul{
     border-bottom: 6px solid transparent;
     &:hover{
       cursor: pointer;
+      color: $primary-color;
       border-bottom: 6px solid $primary-color;
     }
   }

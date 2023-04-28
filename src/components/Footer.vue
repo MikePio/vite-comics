@@ -14,7 +14,7 @@ export default {
   <footer>
 
     <div class="container-top col align-items-center justify-content-center">
-      <div class="container row ">
+      <div class="big-container container row ">
         <div class="half-container half-container-left">
           <div class="row">
             <div class="col">
@@ -69,7 +69,9 @@ export default {
             
       </div>
         <div class="half-container half-container-right">
-
+          <!-- <img class="dc-background" src="../assets/img/dc-logo-bg.png" alt="dc-background"> -->
+          <!-- <img class="dc-background" src="" alt="dc-background"> -->
+          <!-- <div class="dc-background" alt="dc-background"> -->
         </div>
       </div>
     </div>
@@ -79,7 +81,7 @@ export default {
         <button>SIGN-UP NOW!</button>
         <div class="container-bottom-right row align-items-center">
           <h3>FOLLOW US</h3>
-          <ul class="d-flex ">
+          <ul class="d-flex">
             <li><img src="../assets/img/footer-facebook.png" alt="img-footer-down"></li>
             <li><img src="../assets/img/footer-twitter.png" alt="img-footer-down"></li>
             <li><img src="../assets/img/footer-youtube.png" alt="img-footer-down"></li>
@@ -101,16 +103,34 @@ footer{
   .container-top{
     height: 370px;
     background-image: url('../assets/img/footer-bg.jpg');
+    // padding: 0;
+    // margin: 0;
+    .big-container{
+      height: 100%;
+    }
     .half-container{
       // border: 2px solid $primary-color;
-      width: 50%;
+      // width: 50%;
     }
-    .half-container-right{
-      height: 100%;
-      width: 50%;
-      background-image: url('../assets/img/dc-logo-bg.png ');
+    .half-container-left{
+      padding: 30px 0;
+      width: 40%;
+    }
+      .half-container-right{
+      // height: 100%;
+      // height: 30%;
+      width: 60%;
+      // background-image: url('../assets/img/dc-logo-bg.png ');
+      background-image: url('../assets/img/dc-logo-bg.png');
       background-position: center;
       background-repeat: no-repeat;
+      // position: absolute;
+      position: relative;
+      .dc-background{
+        // background-image: url('../assets/img/dc-logo-bg.png');
+        // position: absolute;
+        // position: relative;
+      }
     }
     .col{
       padding: 0 10px;
@@ -122,11 +142,16 @@ footer{
       }
       h4{
         padding: 10px 0;
+        cursor: pointer;
       }
       li{
         color: $quaternary-color;
         font-size: 12px;
         padding: 5px 0;
+        cursor: pointer;
+        &:hover{
+          color: $tertiary-color;
+        }        
       }
     }
   }
@@ -139,6 +164,7 @@ footer{
 
       h3{
         color: $primary-color;
+        cursor: pointer;
       }
     }
 

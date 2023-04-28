@@ -104,9 +104,14 @@ export default {
   .item-cta{
     color: $tertiary-color;
     text-transform: uppercase;
+    &:hover{
+      text-decoration: underline;
+    }
     img{
       width: 40px;
       margin-right: 8px;
+      cursor: pointer;
+      
     }
     
     .position-img{
@@ -116,6 +121,8 @@ export default {
 
     .name-item{
       font-size: 14px;
+      cursor: pointer;
+
     }
   }
 
