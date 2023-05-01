@@ -1,10 +1,10 @@
 <script>
-import {headerNav} from "../data/header-nav"
+import {headerLinks} from "../data/header-nav"
 export default {
   name: 'Header',
   data(){
     return{
-      headerNav
+      headerLinks
     }
   }
 }
@@ -20,10 +20,10 @@ export default {
           </div>
 
           <div class="row justify-content-end">
-          <!-- <ul class="nav-list d-flex ">
-            scrivi qui la lista dinamica
-          </ul> -->
           <ul class="nav-list d-flex ">
+            <li v-for="(headerLink, index) in headerLinks" :key="index">{{ headerLink.name }}</li>
+          </ul>
+          <!-- <ul class="nav-list d-flex ">
             <li>CHARACTERS</li>
             <li>COMICS</li>
             <li>MOVIES</li>
@@ -34,7 +34,7 @@ export default {
             <li>FANS</li>
             <li>NEWS</li>
             <li>SHOP</li>
-          </ul>
+          </ul> -->
         </div>
 
       </div>
@@ -97,6 +97,9 @@ ul{
 }
 
 .nav-list{
+  & li{
+    text-transform: uppercase;
+  }
 
 }
 

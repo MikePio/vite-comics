@@ -1,27 +1,27 @@
 const linksFooterBottom = [
   {
     name: 'facebook',
-    img: '',
+    img: './src/assets/img/footer-facebook.png',
     url: '#'
   },
   {
     name: 'twitter',
-    img: '',
+    img: './src/assets/img/footer-twitter.png',
     url: '#'
   },
   {
     name: 'youTube',
-    img: '',
+    img: './src/assets/img/footer-youtube.png',
     url: '#'
   },
   {
     name: 'pinterest',
-    img: '',
+    img: './src/assets/img/footer-pinterest.png',
     url: '#'
   },
   {
     name: 'periscope',
-    img: '',
+    img: './src/assets/img/footer-periscope.png',
     url: '#'
   }
 ]

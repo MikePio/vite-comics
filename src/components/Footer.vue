@@ -90,11 +90,12 @@ export default {
         <div class="container-bottom-right row align-items-center">
           <h3>FOLLOW US</h3>
           <ul class="d-flex">
-            <li><img src="../assets/img/footer-facebook.png" alt="img-footer-down"></li>
+            <li v-for="(linkFooterBottom, index) in linksFooterBottom" :key="index"><img :src="`${linkFooterBottom.img}`" alt=""></li>
+            <!-- <li><img src="../assets/img/footer-facebook.png" alt="img-footer-down"></li>
             <li><img src="../assets/img/footer-twitter.png" alt="img-footer-down"></li>
             <li><img src="../assets/img/footer-youtube.png" alt="img-footer-down"></li>
             <li><img src="../assets/img/footer-pinterest.png" alt="img-footer-down"></li>
-            <li><img src="../assets/img/footer-periscope.png" alt="img-footer-down"></li>
+            <li><img src="../assets/img/footer-periscope.png" alt="img-footer-down"></li> -->
           </ul>
         </div>
 

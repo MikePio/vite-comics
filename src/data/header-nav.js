@@ -1,4 +1,4 @@
-const headerNav = [
+const headerLinks = [
   {
     name: 'characters',
     url: '#',
@@ -51,4 +51,4 @@ const headerNav = [
   }
 ]
 
-export {headerNav}
+export {headerLinks}
