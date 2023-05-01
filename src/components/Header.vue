@@ -1,9 +1,10 @@
 <script>
+import {headerNav} from "../data/header-nav"
 export default {
   name: 'Header',
   data(){
     return{
-
+      headerNav
     }
   }
 }
@@ -19,6 +20,9 @@ export default {
           </div>
 
           <div class="row justify-content-end">
+          <!-- <ul class="nav-list d-flex ">
+            scrivi qui la lista dinamica
+          </ul> -->
           <ul class="nav-list d-flex ">
             <li>CHARACTERS</li>
             <li>COMICS</li>

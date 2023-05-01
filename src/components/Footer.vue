@@ -1,9 +1,17 @@
 <script>
+// import
+  // { linksFooterTop} from "../data/footer-top",
+  // { linksFooterBottom} from "../data/footer-bottom"
+  // { linksFooterBottom} from "../data/footer-bottom"
+  // { linksFooterTop, linksFooterBottom} from "../data/footer-top" from "../data/footer-bottom"
+  import { linksFooterTop} from "../data/footer-top";
+  import { linksFooterBottom} from "../data/footer-bottom"
 export default {
   name: 'Footer',
   data(){
     return{
-      
+      linksFooterTop,
+      linksFooterBottom
     }
   }
   

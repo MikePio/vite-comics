@@ -1,9 +1,10 @@
 <script>
+import {linksCta} from "../data/container-cta"
 export default {
   name: 'Main',
   data(){
     return{
-
+      linksCta
     }
   }
 }
