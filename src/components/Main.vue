@@ -178,6 +178,10 @@ export default {
     color: $tertiary-color;
   }
 
+  a{
+    text-decoration: none;
+  }
+
   body{
     .container-content{
       width: 100%;

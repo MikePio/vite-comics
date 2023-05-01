@@ -29,27 +29,30 @@ export default {
               
               <ul>
                 <h4>DC COMICS</h4>
-                <li>Characters</li>
+                <li v-for="(listItem, index) in linksFooterTop[0].dcComics" :key="index"><a :href="`${listItem.url}`">{{ listItem.name }}</a></li>
+                <!-- <li>Characters</li>
                 <li>Comics</li>
                 <li>Movies</li>
                 <li>TV</li>
                 <li>Games</li>
                 <li>Videos</li>
-                <li>News</li>
+                <li>News</li> -->
               </ul>
   
               <ul>
                 <h4>SHOP</h4>
-                <li>Shop DC</li>
-                <li>Shop DC Collectibles</li>
+                <li v-for="(listItem, index) in linksFooterTop[1].shop" :key="index"><a :href="`${listItem.url}`">{{ listItem.name }}</a></li>
+                <!-- <li>Shop DC</li>
+                <li>Shop DC Collectibles</li> -->
               </ul>
             </div>
     
             <div class="col">
               <ul>
                 <h4>DC</h4>
-                <li>Terms Of Use</li>
-                <li>Privacy policy (New)</li>
+                <li v-for="(listItem, index) in linksFooterTop[2].dc" :key="index"><a :href="`${listItem.url}`">{{ listItem.name }}</a></li>
+                <!-- <li>Terms Of Use</li>
+                  <li>Privacy policy (New)</li>
                 <li>Ad Choices</li>
                 <li>Advertising</li>
                 <li>Jobs</li>
@@ -58,18 +61,19 @@ export default {
                 <li>CPSC Certificates</li>
                 <li>Ratings</li>
                 <li>Shop Help</li>
-                <li>Contact Us</li>
+                <li>Contact Us</li> -->
               </ul>
             </div>
     
             <div class="col">
               <ul>
                 <h4>SITES</h4>
-                <li>DC</li>
+                <li v-for="(listItem, index) in linksFooterTop[3].sites" :key="index"><a :href="`${listItem.url}`">{{ listItem.name }}</a></li>
+                <!-- <li>DC</li>
                 <li>MAD Magazine</li>
                 <li>DC Kids</li>
                 <li>DC Universe</li>
-                <li>DC Power Visa</li>
+                <li>DC Power Visa</li> -->
               </ul>
             </div>
               
@@ -145,13 +149,17 @@ footer{
         cursor: pointer;
       }
       li{
-        color: $quaternary-color;
-        font-size: 12px;
         padding: 5px 0;
-        cursor: pointer;
         &:hover{
+          cursor: pointer;
           color: $tertiary-color;
         }        
+        a{
+          color: $quaternary-color;
+          font-size: 12px;
+          text-transform: capitalize;
+          text-decoration: none;
+        }
       }
     }
   }
