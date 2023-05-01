@@ -1,26 +1,26 @@
 const linksFooterBottom = [
   {
-    name: 'facebook',
+    name: 'facebook-icon',
     img: './src/assets/img/footer-facebook.png',
-    url: '#'
+    url: 'https://it-it.facebook.com/'
   },
   {
-    name: 'twitter',
+    name: 'twitter-icon',
     img: './src/assets/img/footer-twitter.png',
-    url: '#'
+    url: 'https://twitter.com/?lang=it'
   },
   {
-    name: 'youTube',
+    name: 'youTube-icon',
     img: './src/assets/img/footer-youtube.png',
-    url: '#'
+    url: 'https://www.youtube.com/?hl=it&gl=IT'
   },
   {
-    name: 'pinterest',
+    name: 'pinterest-icon',
     img: './src/assets/img/footer-pinterest.png',
     url: '#'
   },
   {
-    name: 'periscope',
+    name: 'periscope-icon',
     img: './src/assets/img/footer-periscope.png',
     url: '#'
   }
