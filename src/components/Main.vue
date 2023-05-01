@@ -102,7 +102,19 @@ export default {
     
     <div class="container-cta col justify-content-center align-items-center">
       <div class="container row align-items-center justify-content-around">
-        <div class="col">
+        <div v-for="(linkCta, index) in linksCta" :key="index" class="col">
+        <a :href="`${linkCta.url}`">
+          <div class="item-cta row align-items-center">
+            <div class="col">
+              <img :src="`${linkCta.img}`" :alt="`${linkCta.name}`">
+            </div>
+            <div class="col justify-content align-items-center">
+              <div class="name-item">{{ linkCta.name }}</div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <!-- <div class="col">
           <div class="item-cta row align-items-center">
             <div class="col">
               <img src="../assets/img/buy-comics-digital-comics.png" alt="img">
@@ -151,7 +163,7 @@ export default {
               <div class="name-item">dc power visa</div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   
@@ -239,6 +251,12 @@ export default {
     }
   }
 
+  //per ridurre le dimensioni della 4 immagine nella barra azzurra
+  .container-cta .container .col:nth-child(4) img {
+      width: auto;
+      height: 40px;
+    }
+
   .item-cta{
     color: $tertiary-color;
     text-transform: uppercase;
@@ -252,10 +270,11 @@ export default {
       
     }
     
-    .position-img{
-      width: auto;
-      height: 40px;
-    }
+    //per ridurre le dimensioni della 4 immagine nella barra azzurra
+    // .position-img{
+    //   width: auto;
+    //   height: 40px;
+    // }
 
     .name-item{
       font-size: 14px;

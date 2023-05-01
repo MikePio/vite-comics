@@ -1,28 +1,28 @@
 const linksCta = [
   {
     name: 'digital comics',
-    img: '',
-    url: '#'
+    url: '#',
+    img: './src/assets/img/buy-comics-digital-comics.png'
   },
   {
     name: 'dc merchandise',
-    img: '',
-    url: '#'
+    url: '#',
+    img: '../src/assets/img/buy-comics-merchandise.png'
   },
   {
     name: 'subscription',
-    img: '',
-    url: '#'
+    url: '#',
+    img: './src/assets/img/buy-comics-subscriptions.png'
   },
   {
     name: 'comic shop locator',
-    img: '',
-    url: '#'
+    url: '#',
+    img: 'src/assets/img/buy-comics-shop-locator.png'
   },
   {
     name: 'dc power visa',
-    img: '',
-    url: '#'
+    url: '#',
+    img: './src/assets/img/buy-dc-power-visa.svg'
   }
 ]
 
