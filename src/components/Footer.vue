@@ -150,15 +150,15 @@ footer{
       }
       li{
         padding: 5px 0;
-        &:hover{
-          cursor: pointer;
-          color: $tertiary-color;
-        }        
         a{
           color: $quaternary-color;
           font-size: 12px;
           text-transform: capitalize;
           text-decoration: none;
+          &:hover{
+            cursor: pointer;
+            color: $tertiary-color;
+          }        
         }
       }
     }

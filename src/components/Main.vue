@@ -1,10 +1,14 @@
 <script>
 import {linksCta} from "../data/container-cta"
+import data from "../data/dc-comics.json"
+// test per verificare se funziona un .json
+// console.log(data);
 export default {
   name: 'Main',
   data(){
     return{
-      linksCta
+      linksCta,
+      data
     }
   }
 }
@@ -22,7 +26,13 @@ export default {
         <div class="cards-container container row flex-wrap">
 
           <!-- * cards -->
-          <div class="card col">
+          <div v-for="(singleData, index) in data" :key="index" class="card col">
+            <img :src="`${singleData.thumb}`" :alt="`${singleData.series}`">
+            <div>{{ singleData.series }}</div>
+          </div>
+
+          <!-- * cards -->
+          <!-- <div class="card col">
             <img src="../assets/img/jumbotron.jpg" alt="img-card">
             <div>ACTION COMICS</div>
           </div>
@@ -90,7 +100,7 @@ export default {
           <div class="card col">
             <img src="../assets/img/jumbotron.jpg" alt="img-card">
             <div>ACTION COMICS</div>
-          </div>
+          </div> -->
 
         <div class="container-100 col justify-content-center align-items-center">
           <button class="load-more-btn">LOAD MORE</button>
