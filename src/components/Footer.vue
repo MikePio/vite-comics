@@ -197,6 +197,7 @@ footer{
         margin: 0 10px;
         &:hover{
           cursor: pointer;
+          transform: scale(1.1);
         }
       }
     }
