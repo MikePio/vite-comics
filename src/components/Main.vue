@@ -1,14 +1,17 @@
 <script>
 import {linksCta} from "../data/container-cta"
+
 import data from "../data/dc-comics.json"
-// test per verificare se funziona un .json
-// console.log(data);
+import Card from "../components/partials/Card.vue"
 export default {
   name: 'Main',
+  components:{
+    Card
+  },
   data(){
     return{
       linksCta,
-      data
+      data,
     }
   }
 }
@@ -25,11 +28,20 @@ export default {
 
         <div class="cards-container container row flex-wrap">
 
-          <!-- * cards -->
-          <div v-for="(singleData, index) in data" :key="index" class="card col">
+          <!-- * cards in maniera dinamica TRAMITE PROPS-->
+          <!-- ! importa il componente card -->
+          <Card
+            v-for="(singleData, index) in data"
+            :key="index"
+            :imgSrc="singleData.thumb"
+            :nameSerie="singleData.series" 
+          />
+
+          <!-- * cards in maniera dinamica-->
+          <!-- <div v-for="(singleData, index) in data" :key="index" class="card col">
             <img :src="`${singleData.thumb}`" :alt="`${singleData.series}`">
             <div>{{ singleData.series }}</div>
-          </div>
+          </div> -->
 
           <!-- * cards -->
           <!-- <div class="card col">
@@ -220,21 +232,22 @@ export default {
       .cards-container{
         margin: 30px;
 
-        .card{
-          height: 230px;
-          width: 180px;
-          color: $tertiary-color;
-          margin: 30px 10px;
-          &:hover{
-            color: $primary-color;
-            cursor: pointer;
-          }
-          img{
-            height: 180px;
-            width: 180px;
-            margin-bottom: 15px;
-          }
-        }
+    //.card NON è PIU' NECESSARIO QUI IL CODICE è STATO SPOSTATO NE COMPONENTE CARD
+        // .card{
+        //   height: 230px;
+        //   width: 180px;
+        //   color: $tertiary-color;
+        //   margin: 30px 10px;
+        //   &:hover{
+        //     color: $primary-color;
+        //     cursor: pointer;
+        //   }
+        //   img{
+        //     height: 180px;
+        //     width: 180px;
+        //     margin-bottom: 15px;
+        //   }
+        // }
         .load-more-btn{
           margin: 0 auto;
           background-color: $primary-color;
